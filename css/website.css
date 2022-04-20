@@ -396,6 +396,10 @@ header {
     grid-area: img;
     position: relative;
     z-index: 2;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 210px;
+    height: 210px;
   }
 }
 
