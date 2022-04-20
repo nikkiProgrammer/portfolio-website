@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+
+    <link rel="stylesheet" href="singthesong.css" />
+    <title>Have fun Singing</title>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        autoplay
+        muted
+        loop
+        src="https://assets.codepen.io/6093409/river.mp4"
+      ></video>
+      <h1>Sing Along.....</h1>
+
+      <h2 id="text"></h2>
+
+      <div class="detail">
+        <img
+          src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8E71/production/_121256463_2photocreditdanmartensen.jpg"
+        />
+        <h3>Ed Sheeran</h3>
+        <p>Shivers</p>
+      </div>
+
+      <div class="visual">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="player">
+        <label for="speed">Speed:</label>
+        <input
+          type="number"
+          name="speed"
+          id="speed"
+          value="1"
+          min="1"
+          max="5"
+          step="1"
+        />
+        <br />
+        <br />
+        <div id="sound">
+          <audio
+            id="myaudio"
+            controls
+            src="Ed_Sheeran_-_Shivers.mp3"
+            type="audio/mpeg"
+          ></audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="singthesong.js"></script>
+  </body>
+</html>

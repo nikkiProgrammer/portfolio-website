@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fc8c03;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  text-align: center;
+  background: bisque;
+}
+
+.tag {
+  background-color: burlywood;
+  color: black;
+  border-radius: 50px;
+  padding: 4px 4px;
+  font-size: 14px;
+  margin: 0 5px 10px 0;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #fc4e03;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fc4e03;
+}
+
+.container img {
+  -webkit-animation: img 2s infinite;
+}
+
+@-webkit-keyframes img {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 5%;
+  }
+}

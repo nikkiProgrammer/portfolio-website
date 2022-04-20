@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="gradecalculator.css" />
+    <title>CHECKING GRADES</title>
+  </head>
+  <body>
+    <div id="box">
+      <h1>GRADE CALCULATOR</h1>
+
+      <br />
+      <form action="">
+        <br />
+        <input
+          type="text"
+          id="firstName"
+          placeholder="First Name"
+          size="20"
+          maxlength="20"
+        />
+        <input
+          type="text"
+          id="lastName"
+          placeholder="Last Name"
+          size="20"
+          maxlength="20"
+        />
+        <br />
+        <br />
+        <br />
+        <input
+          type="number"
+          id="age"
+          placeholder="Enter your age"
+          maxlength="2"
+        />
+        <br />
+        <br />
+        <br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label id="ml">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label id="fl">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label id="ot">Other</label>
+        <br />
+        <br />
+
+        <select name="university" id="school">
+          <option value="">Select University</option>
+          <option value="">Metropolia</option>
+          <option value="">Xamk</option>
+          <option value="">Centria</option>
+        </select>
+
+        <br />
+        <br />
+        <label id="register">Registration Status:</label>
+        <br />
+        <select name="Choose" id="status">
+          <option value="">SELECT</option>
+          <option value="">Registered</option>
+          <option value="">Not Registered</option>
+        </select>
+        <br />
+        <br />
+        <input type="text" id="js" placeholder="JavaScript" />
+        <input type="text" id="h" placeholder="HTML" />
+        <input type="text" id="c" placeholder="CSS" />
+      </form>
+      <button id="btn">Results</button>
+      <p id="text"></p>
+    </div>
+
+    <script src="gradecalculator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  z-index: 100;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.container video {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  z-index: 100;
+  width: 50%;
+}
+
+.detail {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 70%;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px dotted white;
+  animation: roll 19s ease infinite;
+  object-fit: cover;
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h3 {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  animation: fadein 5s ease;
+}
+
+p {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  padding-top: 15px;
+  animation: fadein 5s ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.visual {
+  position: absolute;
+  display: flex;
+  bottom: 7%;
+  left: 80%;
+  animation: jump 3s ease infinite;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 7%;
+  }
+  50% {
+    bottom: 10%;
+  }
+  100% {
+    bottom: 7%;
+  }
+}
+
+.visual div {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background: lightblue;
+}
+
+.player {
+  position: absolute;
+  left: 40%;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+label {
+  margin-left: 80px;
+}
+input {
+  width: 50px;
+
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+
+      <button class="nav-toggle" aria-label=" toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#studies" class="nav__link">Studies</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#myprojects" class="nav__link">My Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Intro-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hello, a bit about me...
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Junior front-end developer.
+      </p>
+      <img
+        src="https://mail.google.com/mail/u/0?ui=2&ik=ef5c395535&attid=0.1&permmsgid=msg-f:1724722650527521371&th=17ef721cd8c35a5b&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ--36uiSJILm4y-kULAbdzp9854tIF_J2CIbtWypPxsdPIqtSVj70KxhlFnhwmuk85rVG_GQwB1KWNyY1on268s7seLbjfpbQc6W3b16pB_audq9F-jLiMslQ4&disp=emb"
+        class="intro__img"
+        alt="mina"
+        width="200"
+        height="250"
+      />
+    </section>
+
+    <!--Studies-->
+    <section class="my--studies" id="studies">
+      <h2 class="section__title section__title--studies">
+        What I am studying...
+      </h2>
+      <div class="studies">
+        <div class="studies">
+          <img
+            src="https://icon-library.com/images/html5-icon/html5-icon-6.jpg"
+            width="180px"
+            height="160px"
+          />
+        </div>
+
+        <div class="studies">
+          <img
+            src="https://www.pinclipart.com/picdir/big/495-4955744_css-logo-png-css-logo-black-and-white.png"
+            width="160px"
+            height="150px"
+          />
+        </div>
+
+        <div class="studies">
+          <img
+            src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-13.jpg"
+            width="180px"
+            height="150px"
+          />
+        </div>
+      </div>
+
+      <a href="#myprojects" class="btn">My Projects</a>
+    </section>
+
+    <!--About me-->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">BIO</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Finnish-based former award-winning journalist training to become a
+        front-end engineer.
+      </p>
+
+      <div class="about-me__body">
+        <ul>
+          <li>MSc. candidate-Computer Science and International Business</li>
+          <li>B.Eng. candidate-Information Technology</li>
+          <li>BSc. Management Studies</li>
+        </ul>
+      </div>
+      <img
+        src="https://mail.google.com/mail/u/0?ui=2&ik=ef5c395535&attid=0.1&permmsgid=msg-f:1724723258650889076&th=17ef72aa6fbd8b74&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ92LkLh2m5vkLmYFOK2peDkXb2HixUACT7Bsax2cFuv7uT5jD3r4idL15LVtzYxcbJNiZjot2BC-0CKD_j4sfIgS7thEu4JeZBEiH9G8BNtQXy62RICAURtJqA&disp=emb"
+        class="about-me__img"
+        alt="Nikki is smiling"
+        width="200"
+        height="280"
+      />
+    </section>
+
+    <!--My Projects-->
+
+    <section class="my-projects" id="myprojects">
+      <h2 class="section__title section--">My Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">
+        Front-end fundamentals
+      </p>
+      <div class="portfolio">
+        <div class="card">
+          <a href="http://tablesphp.epizy.com/tables.php">
+            <img
+              src="./images/smiles.PNG"
+              alt=""
+              class="portfolio__ img"
+            />
+            <h3>Happy People</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="http://calculatorphp.epizy.com/calculator.php">
+            <img src="./images/calculator.PNG" alt="" class="portfolio__ img" />
+            <h3>Operators</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="http://calculatorphp.epizy.com/calculator.php">
+            <img
+              src="./images/luckynumbers.PNG"
+              alt=""
+              class="portfolio__ img"
+            />
+            <h3>Lucky Numbers</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-14/stopwatch.html">
+            <img src="./images/stopwatch.PNG" alt="" class="portfolio__ img" />
+            <h3>Ready>Set>Go</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-13/countryurl.html">
+            <img
+              src="./images/bmicalculator.PNG"
+              alt=""
+              class="portfolio__ img"
+            />
+            <h3>Health Tracker</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-12/countryurl.html">
+            <img src="./images/countryurl.PNG" alt="" class="portfolio__ img" />
+            <h3>Find a Country</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-11/gradecalculator.html">
+            <img
+              src="./images/gradecalculator.PNG"
+              alt=""
+              class="portfolio__ img"
+            />
+            <h3>Grade Calculator</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="./projects/Project-8/mobileapp.html">
+            <img src="./images/mobileapp.PNG" alt="" class="portfolio__ img" />
+            <h3>Mobile App</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-10/doyouknow.html">
+            <img src="./images/Finnish101.PNG" alt="" class="portfolio__ img" />
+            <h3>Finnish 101</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-7/singthesong.html">
+            <img src="./images/ED.PNG" alt="" class="portfolio__ img" />
+            <h3>Do You Know The Lyrics?</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-9/guessthenumber.html">
+            <img
+              src="./images/guessthenumber.PNG"
+              alt=""
+              class="portfolio__ img"
+            />
+            <h3>Lucky 7</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-1/passwordgenerator.html">
+            <img
+              src="./images/passwordgenerator.PNG"
+              alt=""
+              class="portfolio__ img"
+            />
+            <h3>Password Generator</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-2/index2.html">
+            <img src="./images/index2.PNG" alt="" class="portfolio__ img" />
+            <h3>Progress Checker</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="./projects/Project-3/index3.html">
+            <img src="./images/index3.PNG" alt="" class="portfolio__ img" />
+            <h3>Revolving Navigation</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="./projects/Project-4/index4.html">
+            <img src="./images/index4.PNG" alt="" class="portfolio__ img" />
+            <h3>Discoverer</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="./projects/Project-5/index5.html">
+            <img src="./images/index5.PNG" alt="" class="portfolio__ img" />
+            <h3>The Blur Element</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="./projects/Project-6/index6.html">
+            <img src="./images/index6.PNG" alt="" class="portfolio__ img" />
+            <h3>Guess The Animal</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer-->
+    <footer class="footer">
+      <a href="mailto:anikaharju@yahoo.com" class="footer__link"
+        ><i class="fas fa-envelope 2x"></i> anikaharju@yahoo.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://nostalgic-williams-cf5320.netlify.app/"
+            ><i class="fas fa-globe fa-3x"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/anikaharju"
+            ><i class="fab fa-linkedin fa-3x"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/nikkiProgrammer"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./js/website.js"></script>
+  </body>
+</html>

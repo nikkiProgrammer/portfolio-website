@@ -1,0 +1,79 @@
+body {
+  background-image: url("https://max7.azureedge.net/resourceimages/c1cabc40-15f8-4c35-a3a1-ab488a349b10/original/2.jpg");
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  position: relative;
+  animation: changing 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changing {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 1500px;
+  }
+  100% {
+    left: 0px;
+  }
+  from {
+    color: black;
+  }
+
+  to {
+    color: rgb(248, 0, 54);
+  }
+}
+
+.circle {
+  height: 550px;
+  width: 550px;
+  background-color: rgb(200, 7, 49);
+  margin: auto;
+  line-height: 420px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 2px rgb(200, 7, 49);
+}
+
+#display {
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: -65%;
+}
+
+#startStop {
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(235, 173, 186);
+  opacity: 0.7;
+}
+
+#reset {
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(235, 173, 186);
+  opacity: 0.7;
+}

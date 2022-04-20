@@ -1,0 +1,124 @@
+h1 {
+  color: #f0eadd;
+  text-align: center;
+}
+
+h1 {
+  animation: changing 2s infinite;
+}
+
+@keyframes changing {
+  from {
+    color: #f0eadd;
+  }
+
+  to {
+    color: rgb(159, 89, 170);
+  }
+}
+
+body {
+  background-color: rgb(51, 4, 58);
+  height: 100%;
+  margin-top: 250px;
+}
+
+#container {
+  height: 300px;
+  width: 550px;
+  background-color: #f0eadd;
+  margin: 0 auto;
+  border: 5px solid rgb(159, 89, 170);
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 50px;
+  grid-template-rows: 100px 1fr 1fr;
+  border-radius: 15px 15px 0 0;
+  color: rgb(51, 4, 58);
+}
+
+#weight-input {
+  height: 25px;
+  width: 250px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  align-self: center;
+  border: solid 2px rgb(51, 4, 58);
+}
+
+#wlabel {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#height-input {
+  height: 25px;
+  width: 250px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: center;
+  border: solid 2px rgb(51, 4, 58);
+}
+
+#hlabel {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#bmi-output {
+  height: 25px;
+  width: 250px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  align-self: center;
+  border: solid 2px rgb(51, 4, 58);
+}
+
+#bmilabel {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+#btn {
+  height: 25px;
+  width: 75px;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: center;
+  justify-self: center;
+  border: solid 2px rgb(51, 4, 58);
+  border-radius: 10px;
+  background-color: rgb(159, 89, 170);
+}
+
+#table {
+  height: 100px;
+  width: 550px;
+  background-color: #f0eadd;
+  margin: 0 auto;
+  border: 5px solid rgb(159, 89, 170);
+  border-radius: 0px 0px 15px 15px;
+}
+
+table,
+th,
+td {
+  margin: auto;
+  text-align: center;
+  border: solid 2px rgb(51, 4, 58);
+  color: rgb(51, 4, 58);
+  font-weight: bold;
+}

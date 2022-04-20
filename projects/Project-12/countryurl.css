@@ -1,0 +1,54 @@
+body {
+  background-image: url("https://ministryark.com/katy/wp-content/uploads/2015/10/World-Map-tabloid-size-1080x675.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  animation: changing 2s infinite;
+  
+}
+
+@keyframes changing {
+  from {
+    color: greenyellow;
+  }
+
+  to {
+    color: red;
+  }
+}
+
+#firstName {
+  border: solid 2px rgb(8, 7, 114);
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#lastName {
+  border: solid 2px rgb(8, 7, 114);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#country {
+  border: solid 2px rgb(8, 7, 114);
+  width: 280px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#send {
+  border: solid 2px rgb(8, 7, 114);
+  border-radius: 10px;
+  padding: 10px;
+}
