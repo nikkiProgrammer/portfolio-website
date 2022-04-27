@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/skill.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!---Skills-->
+    <div id="skills" class="skills">
+      <div class="skills-container">
+        <h1>My Skills</h1>
+        <form action="">
+          <select name="skill" id="skill">
+            <option value="" selected disabled hidden>SKILLS</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="py">Python</option>
+            <option value="ph">PHP</option>
+          </select>
+          <input type="submit" value="SUBMIT" id="btn" />
+        </form>
+        <ul class="list"></ul>
+      </div>
+    </div>
+    <!---Footer-->
+    <footer class="footer">
+      <a href="mailto:anikaharju@yahoo.com" class="footer__link"
+        ><i class="fas fa-envelope 2x"></i> anikaharju@yahoo.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://nostalgic-williams-cf5320.netlify.app/"
+            ><i class="fas fa-globe fa-3x"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/anikaharju"
+            ><i class="fab fa-linkedin fa-3x"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/nikkiProgrammer"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+      <!---Date/Time-->
+      <div class="datetime">
+        <i class="fa fa-calendar" aria-hidden="true">
+          <span class="calender"></span>
+        </i>
+        <i class="fas fa-clock">
+          <span class="clock"></span>
+        </i>
+      </div>
+    </footer>
+    <script src="./js/skill.js"></script>
+  </body>
+</html>

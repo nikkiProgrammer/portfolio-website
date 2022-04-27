@@ -14,280 +14,387 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./images/logo.png" alt="" />
+    <!--Load-->
+    <div class="loader"></div>
+    <div class="spinner">
+      <header>
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <!--Hamburger-->
+        <button class="nav-toggle" aria-label=" toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#studies" class="nav__link">Studies</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#myprojects" class="nav__link">My Projects</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="skills.html" class="nav__link">Skills</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#favouritethings" class="nav__link">Favourite Things</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Intro-->
+      <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+          Hello, a bit about me...
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+          Junior front-end developer.
+        </p>
+        <img
+          src="./images/nikki.jpg"
+          class="intro__img"
+          alt="mina"
+          width="200"
+          height="250"
+        />
+      </section>
+
+      <!--Studies-->
+      <section class="my--studies" id="studies">
+        <h2 class="section__title section__title--studies">
+          What I am studying...
+        </h2>
+        <div class="studies">
+          <div class="studies">
+            <img
+              src="https://icon-library.com/images/html5-icon/html5-icon-6.jpg"
+              width="180px"
+              height="160px"
+            />
+          </div>
+
+          <div class="studies">
+            <img
+              src="https://www.pinclipart.com/picdir/big/495-4955744_css-logo-png-css-logo-black-and-white.png"
+              width="160px"
+              height="150px"
+            />
+          </div>
+
+          <div class="studies">
+            <img
+              src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-13.jpg"
+              width="180px"
+              height="150px"
+            />
+          </div>
+        </div>
+
+        <a href="#myprojects" class="btn">My Projects</a>
+      </section>
+
+      <!--About me-->
+      <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">BIO</h2>
+        <p class="section__subtitle section__subtitle--about">
+          Finnish-based former award-winning journalist training to become a
+          front-end engineer.
+        </p>
+
+        <div class="about-me__body">
+          <ul>
+            <li>MSc. candidate-Computer Science and International Business</li>
+            <li>B.Eng. candidate-Information Technology</li>
+            <li>BSc. - Management Studies</li>
+          </ul>
+          <a href="" class="btntext">Download CV</a>
+          <a href="./images/Anika Harju CV word.docx" download class="btncv"
+            >DOC</a
+          >
+          <a href="./images/Anika Harju CV PDF.pdf" download class="btncv"
+            >PDF</a
+          >
+        </div>
+        <img
+          src="./images/smiling.jpg"
+          class="about-me__img"
+          alt="Nikki is smiling"
+          width="200"
+          height="280"
+        />
+      </section>
+
+      <!--Gallery-->
+      <div class="slide-container" id="favouritethings">
+        <h1>Favourite Things</h1>
+        <div class="slides">
+          <div class="slide">
+            <img
+              src="https://images.pexels.com/photos/248307/pexels-photo-248307.jpeg"
+              alt=""
+            />
+            <p>Man's Best Friend</p>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+              alt=""
+            />
+            <p>Just You and Me</p>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://images.pexels.com/photos/3361746/pexels-photo-3361746.jpeg"
+              alt=""
+            />
+            <p>More Bones</p>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://images.pexels.com/photos/594687/pexels-photo-594687.jpeg"
+              alt=""
+            />
+            <p>Let's Go</p>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://images.pexels.com/photos/7324407/pexels-photo-7324407.jpeg"
+              alt=""
+            />
+            <p>Life Is Good</p>
+          </div>
+
+          <div class="arrow">
+            <button class="btn left">&lt;</button>
+            <button class="btn right">&gt;</button>
+          </div>
+        </div>
+        <div class="credit">
+          Photos courtesy:
+          <a href="https://www.pexels.com/search/puppies/">Pixabay</a>
+        </div>
       </div>
 
-      <button class="nav-toggle" aria-label=" toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#studies" class="nav__link">Studies</a>
+      <!--My Projects-->
+
+      <section class="my-projects" id="myprojects">
+        <h2 class="section__title section--">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">
+          Front-end fundamentals
+        </p>
+        <div class="portfolio">
+          <div class="card">
+            <a href="http://tablesphp.epizy.com/tables.php">
+              <img src="./images/smiles.PNG" alt="" class="portfolio__ img" />
+              <h3>Happy People</h3>
+            </a>
+          </div>
+          <div class="card">
+            <a href="http://calculatorphp.epizy.com/calculator.php">
+              <img
+                src="./images/calculator.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Operators</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="http://luckynumbersphp.epizy.com/random.php">
+              <img
+                src="./images/luckynumbers.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Lucky Numbers</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-14/stopwatch.html">
+              <img
+                src="./images/stopwatch.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Ready>Set>Go</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-13/bmicalculator.html">
+              <img
+                src="./images/bmicalculator.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Health Tracker</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-12/countryurl.html">
+              <img
+                src="./images/countryurl.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Find a Country</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-11/gradecalculator.html">
+              <img
+                src="./images/gradecalculator.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Grade Calculator</h3>
+            </a>
+          </div>
+          <div class="card">
+            <a href="./projects/Project-8/mobileapp.html">
+              <img
+                src="./images/mobileapp.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Mobile App</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-10/doyouknow.html">
+              <img
+                src="./images/Finnish101.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Finnish 101</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-7/singthesong.html">
+              <img src="./images/ED.PNG" alt="" class="portfolio__ img" />
+              <h3>Do You Know The Lyrics?</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-9/guessthenumber.html">
+              <img
+                src="./images/guessthenumber.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Lucky 7</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-1/passwordgenerator.html">
+              <img
+                src="./images/passwordgenerator.PNG"
+                alt=""
+                class="portfolio__ img"
+              />
+              <h3>Password Generator</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-2/index2.html">
+              <img src="./images/index2.PNG" alt="" class="portfolio__ img" />
+              <h3>Progress Checker</h3>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="./projects/Project-3/index3.html">
+              <img src="./images/index3.PNG" alt="" class="portfolio__ img" />
+              <h3>Revolving Navigation</h3>
+            </a>
+          </div>
+          <div class="card">
+            <a href="./projects/Project-4/index4.html">
+              <img src="./images/index4.PNG" alt="" class="portfolio__ img" />
+              <h3>Discoverer</h3>
+            </a>
+          </div>
+          <div class="card">
+            <a href="./projects/Project-5/index5.html">
+              <img src="./images/index5.PNG" alt="" class="portfolio__ img" />
+              <h3>The Blur Element</h3>
+            </a>
+          </div>
+          <div class="card">
+            <a href="./projects/Project-6/index6.html">
+              <img src="./images/index6.PNG" alt="" class="portfolio__ img" />
+              <h3>Guess The Animal</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!---Footer-->
+      <footer class="footer">
+        <a href="mailto:anikaharju@yahoo.com" class="footer__link"
+          ><i class="fas fa-envelope 2x"></i> anikaharju@yahoo.com</a
+        >
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://nostalgic-williams-cf5320.netlify.app/"
+              ><i class="fas fa-globe fa-3x"></i
+            ></a>
           </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://www.linkedin.com/in/anikaharju"
+              ><i class="fab fa-linkedin fa-3x"></i
+            ></a>
           </li>
-          <li class="nav__item">
-            <a href="#myprojects" class="nav__link">My Projects</a>
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://github.com/nikkiProgrammer"
+              ><i class="fab fa-github fa-3x"></i
+            ></a>
           </li>
         </ul>
-      </nav>
-    </header>
-
-    <!--Intro-->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hello, a bit about me...
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        Junior front-end developer.
-      </p>
-      <img
-        src="./images/nikki.jpg"
-        class="intro__img"
-        alt="mina"
-        width="200"
-        height="250"
-      />
-    </section>
-
-    <!--Studies-->
-    <section class="my--studies" id="studies">
-      <h2 class="section__title section__title--studies">
-        What I am studying...
-      </h2>
-      <div class="studies">
-        <div class="studies">
-          <img
-            src="https://icon-library.com/images/html5-icon/html5-icon-6.jpg"
-            width="180px"
-            height="160px"
-          />
+        <!---Date/Time-->
+        <div class="datetime">
+          <i class="fa fa-calendar" aria-hidden="true">
+            <span class="calender"></span>
+          </i>
+          <i class="fas fa-clock">
+            <span class="clock"></span>
+          </i>
         </div>
-
-        <div class="studies">
-          <img
-            src="https://www.pinclipart.com/picdir/big/495-4955744_css-logo-png-css-logo-black-and-white.png"
-            width="160px"
-            height="150px"
-          />
-        </div>
-
-        <div class="studies">
-          <img
-            src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-13.jpg"
-            width="180px"
-            height="150px"
-          />
-        </div>
-      </div>
-
-      <a href="#myprojects" class="btn">My Projects</a>
-    </section>
-
-    <!--About me-->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">BIO</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Finnish-based former award-winning journalist training to become a
-        front-end engineer.
-      </p>
-
-      <div class="about-me__body">
-        <ul>
-          <li>MSc. candidate-Computer Science and International Business</li>
-          <li>B.Eng. candidate-Information Technology</li>
-          <li>BSc. Management Studies</li>
-        </ul>
-      </div>
-      <img
-        src="./images/smiling.jpg"
-        class="about-me__img"
-        alt="Nikki is smiling"
-        width="200"
-        height="280"
-      />
-    </section>
-
-    <!--My Projects-->
-
-    <section class="my-projects" id="myprojects">
-      <h2 class="section__title section--">My Projects</h2>
-      <p class="section__subtitle section__subtitle--projects">
-        Front-end fundamentals
-      </p>
-      <div class="portfolio">
-        <div class="card">
-          <a href="http://tablesphp.epizy.com/tables.php">
-            <img
-              src="./images/smiles.PNG"
-              alt=""
-              class="portfolio__ img"
-            />
-            <h3>Happy People</h3>
-          </a>
-        </div>
-        <div class="card">
-          <a href="http://calculatorphp.epizy.com/calculator.php">
-            <img src="./images/calculator.PNG" alt="" class="portfolio__ img" />
-            <h3>Operators</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="http://luckynumbersphp.epizy.com/random.php">
-            <img
-              src="./images/luckynumbers.PNG"
-              alt=""
-              class="portfolio__ img"
-            />
-            <h3>Lucky Numbers</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-14/stopwatch.html">
-            <img src="./images/stopwatch.PNG" alt="" class="portfolio__ img" />
-            <h3>Ready>Set>Go</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-13/bmicalculator.html">
-            <img
-              src="./images/bmicalculator.PNG"
-              alt=""
-              class="portfolio__ img"
-            />
-            <h3>Health Tracker</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-12/countryurl.html">
-            <img src="./images/countryurl.PNG" alt="" class="portfolio__ img" />
-            <h3>Find a Country</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-11/gradecalculator.html">
-            <img
-              src="./images/gradecalculator.PNG"
-              alt=""
-              class="portfolio__ img"
-            />
-            <h3>Grade Calculator</h3>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./projects/Project-8/mobileapp.html">
-            <img src="./images/mobileapp.PNG" alt="" class="portfolio__ img" />
-            <h3>Mobile App</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-10/doyouknow.html">
-            <img src="./images/Finnish101.PNG" alt="" class="portfolio__ img" />
-            <h3>Finnish 101</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-7/singthesong.html">
-            <img src="./images/ED.PNG" alt="" class="portfolio__ img" />
-            <h3>Do You Know The Lyrics?</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-9/guessthenumber.html">
-            <img
-              src="./images/guessthenumber.PNG"
-              alt=""
-              class="portfolio__ img"
-            />
-            <h3>Lucky 7</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-1/passwordgenerator.html">
-            <img
-              src="./images/passwordgenerator.PNG"
-              alt=""
-              class="portfolio__ img"
-            />
-            <h3>Password Generator</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-2/index2.html">
-            <img src="./images/index2.PNG" alt="" class="portfolio__ img" />
-            <h3>Progress Checker</h3>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="./projects/Project-3/index3.html">
-            <img src="./images/index3.PNG" alt="" class="portfolio__ img" />
-            <h3>Revolving Navigation</h3>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./projects/Project-4/index4.html">
-            <img src="./images/index4.PNG" alt="" class="portfolio__ img" />
-            <h3>Discoverer</h3>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./projects/Project-5/index5.html">
-            <img src="./images/index5.PNG" alt="" class="portfolio__ img" />
-            <h3>The Blur Element</h3>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./projects/Project-6/index6.html">
-            <img src="./images/index6.PNG" alt="" class="portfolio__ img" />
-            <h3>Guess The Animal</h3>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!---Footer-->
-    <footer class="footer">
-      <a href="mailto:anikaharju@yahoo.com" class="footer__link"
-        ><i class="fas fa-envelope 2x"></i> anikaharju@yahoo.com</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://nostalgic-williams-cf5320.netlify.app/"
-            ><i class="fas fa-globe fa-3x"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://www.linkedin.com/in/anikaharju"
-            ><i class="fab fa-linkedin fa-3x"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/nikkiProgrammer"
-            ><i class="fab fa-github fa-3x"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
     <script src="./js/website.js"></script>
   </body>
 </html>
