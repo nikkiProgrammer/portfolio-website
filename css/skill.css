@@ -87,7 +87,7 @@
     font-size: var(--fs-h3);
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -12%;
     width: 100%;
   }
   
